@@ -1,0 +1,256 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+.container{
+    max-width: 90%;
+    margin: 0 10%;
+}
+
+.cabecalho{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 56px;
+    background-color: blue;
+    color: white;
+    padding: 10px 0;
+}
+
+
+
+.cabecalho li{
+    list-style: none;
+    display: inline;
+    padding-right: 8px;
+}
+
+.cabecalho li a{
+    text-decoration: none;
+    color: white;
+}
+
+.sobrealoja{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    column-gap: 1%;
+    max-width: 100%;
+    margin-bottom: 5%;
+    
+}
+
+#produtoh2{
+    margin-bottom: 5%;
+}
+
+.sobrealoja img{
+    
+    padding: 0 10px;
+    height: 100%;
+    width: 100%;
+    
+}
+
+.sobrealoja h2{
+    margin-bottom: 16px;
+    border-bottom: blue solid 2px;
+    padding-bottom: 6px;
+}
+.listaprodutos{
+    display: grid;
+    grid-template-columns: repeat(4, 19.5%);        
+    max-width: 100%;
+    column-gap: 6%;
+    
+}
+.listaprodutos img{
+    height: 200px;
+    width: 100%;
+}
+
+.listaprodutos button{
+    margin-bottom: 16px;
+    width: 100%;
+    background-color: green;
+    color: #fff;
+    font-weight: bold;
+    padding: 8px;
+   
+
+}
+
+#produtoh2{
+    border-bottom: blue solid 2px;
+    padding-bottom: 8px;
+}
+
+
+@media screen and (min-width: 641px) and (max-width: 1023px){
+    .cabecalho a{
+        color: white;
+    }
+
+    .sobrealoja{
+        display: block;
+        max-width: 100%;
+        margin-bottom: 10%; 
+        align-items: center;       
+    }
+
+    .sobrealoja img{
+        height: 100%;
+        margin: 2% auto;
+        
+    }
+
+    .secaoproduto{
+        margin: 0 auto;
+        
+        
+    }
+
+   
+    
+    .listaprodutos{
+        display: grid;
+        grid-template-columns: repeat(2, 40%);        
+        max-width: 100%;
+        column-gap: 20%;
+        align-content: center;
+        margin: 5% 10%;
+        
+    }
+
+
+
+    .listaprodutos article{
+       max-width: 100%;
+       vertical-align: baseline;
+    }
+
+    .listaprodutos img{
+        
+    }
+
+    .listaprodutos  button{
+        margin-bottom: 16px;
+        max-width: 100%;
+        width: 100%;
+        background-color: green;
+        color: #fff;
+        font-weight: bold;
+        padding: 2px;
+        
+       
+    
+    }
+
+
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width: 640px) {
+    
+
+    .container{
+        max-width: 100%;
+        margin-bottom: 35px;
+        
+    }
+
+    .cabecalho{
+        display: flex;
+        align-items: center;
+        margin-bottom: 56px;
+        background-color: blue;
+        color: white;
+        max-width: 100%;
+        font-size: 14px;
+    }
+
+    .cabecalho h1{
+        font-size: large;
+    }
+
+    .cabecalho a{
+        color: white;
+        font-size: small;
+    }
+    .sobrealoja{
+        display: block;        
+        max-width: 100%;
+        margin-bottom: 10%;
+        margin: 0;
+        
+    }
+
+    
+
+    .sobrealoja img,
+    .listaprodutos img {
+        
+        max-width: 100%;
+        width: 100%;
+        margin: 0 auto;
+        margin-bottom: 16px;
+        
+        
+            
+    }
+    .sobrealoja h2{
+        margin-bottom: 16px;
+        max-width: 100%;
+        
+
+    }
+
+    .sobrealoja p{
+        margin-bottom: 32px;
+        max-width: 100%;
+
+    }
+
+    .listaprodutos{
+        display: block;        
+        max-width: 100%;
+    }
+
+    
+    
+    .secaoproduto #produtoh2{
+        margin-bottom: 32px;
+        font-size: 18px;
+    }
+
+    .listaprodutos img {
+       margin-top: 32px;
+        width: 100%;
+    }
+        
+    
+    .listaprodutos button{
+        margin-bottom: 16px;
+        width: 100%;
+        background-color: green;
+        color: #fff;
+        font-weight: bold;
+        padding: 4px;
+        margin-top: 16px;
+       
+    
+    }
+       
+    
+    }
+
+
+
+
